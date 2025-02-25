@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正親町_公式サイト</title>
+    <meta name="description" content="鉄道の魅力を深掘り！正親町チャンネルの公式Webサイト。最新動画やイベント情報をお届けします。">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            text-align: center;
+            color: #1d1d1f;
+            overflow-x: hidden;
+        }
+        header {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background 1s ease;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding-top: 100px;
+        }
+        section {
+            padding: 100px 20px 60px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero {
+            background: url('https://pbs.twimg.com/media/Gko2s8PWgAAFpNj?format=jpg&name=900x900') no-repeat center top;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2, .hero p {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+            font-family: "Arial", sans-serif;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+        .about-text {
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: 'Sawarabi Mincho', serif;
+            line-height: 1.6;
+            display: block;
+            text-align: center;
+        }
+        .video-container {
+            max-width: 560px;
+            margin: 20px auto;
+        }
+        footer {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .announcement {
+            background: #ffdddd;
+            padding: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    .sns-links {
+            margin-top: 10px;
+        }
+        .sns-links a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #0071e3;
+            text-decoration: none;
+        }
+        .sns-links a:hover {
+            color: #005bb5;
+        }
+        .about-text {
+            font-family: 'Yomogi', serif;
+            font-size: 1.5em;
+            font-weight: normal;
+            line-height: 1.6;
+            display: block;
+            text-align: center;
+        }
+        .sns-links {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .sns-links a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        .sns-links {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .sns-links a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: inherit;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>正親町チャンネル</h1>
+        <div class="sns-links">
+            <a href="https://www.youtube.com/@ogimachichannel" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/OGIMACHI_COM" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ogimachi_com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">チャンネル紹介</a></li>
+                <li><a href="#news">お知らせ</a></li>
+                <li><a href="#videos">人気の動画</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero show">
+        <h2>すべてがプロ。</h2>
+        <p>正親町チャンネルが旅行の魅力をお届けします</p>
+    </section>
+    
+    <main class="content">
+        <section id="news">
+            <h2>お知らせ</h2>
+            <div class="announcement">New!→2025.2/24 　投稿をしばらくお休みします　<a href="https://x.com/OGIMACHI_COM/status/1893995851942437228" target="_blank">詳細はこちら</a></div>
+        </section>
+        
+        <section id="about">
+            <h2>チャンネル紹介</h2>
+            <p class="about-text">こんにちは。鉄道系の動画を投稿している正親町と申します。 関東に住む旅行、旅行好きの学生。多くの鉄道系youtuberさんの動画に影響を受け、自分の好きな鉄道で動画投稿をすることを決めました。鉄道、旅好きの方はもちろん、そうでない方にも楽しんでもらえる企画を行っていきたいと考えております。正親町は同名の天皇からとった仮名。貴族ではありません。</p>
+        </section>
+            <section id="videos">
+            <h2>人気の動画</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4dj1Zg-9GcA?si=rJrRwl0r09kox_CB" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <p>お問い合わせはこちら: <a href="mailto:ogimachicom@gmail.com">ogimachicom@gmail.com</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Copyright © Ogimachi Official Web Site 2025.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            function checkScroll() {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.85) {
+                        section.classList.add("show");
+                    }
+                });
+            }
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();
+        });
+    </script>
+</body>
+</html>
